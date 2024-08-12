@@ -1,81 +1,16 @@
-<br><h3>Tic Tac Toe on Aptos</h4>
-<br>
-A simple implementation of the Tic Tac Toe game using the Move language on the Aptos blockchain.
-<br>
-Overview
-<br>
-This project uses a smart contract to manage the Tic Tac Toe game state, allowing two players to play securely on a decentralized platform.
-<br>
-Features
-<br>
-Decentralized Gameplay
-<br>
-Two-Player Support
-<br>
-Basic Game Logic
-<br>
-Getting Started
-<br>
-Prerequisites
-<br>
-Rust: Install
-<br>
-Aptos CLI: Install via:
-<br>
-bash
-<br>
-Copy code
-<br>
-cargo install --git https://github.com/aptos-labs/aptos-core.git aptos
-<br>
-Installation
-<br>
-Clone the repository:
-<br>
-bash
-<br>
-Copy code
-<br>
-git clone https://github.com/yourusername/aptos-tic-tac-toe.git
-<br>
-cd aptos-tic-tac-toe
-<br>
-Compile the contract:
-<br>
-bash
-<br>
-Copy code
-<br>
-aptos move compile --named-addresses default=<your_address>
-  <br>
-Deploy to testnet:
-<br>
-bash
-  <br>
-Copy code
-  <br>
-aptos move publish --profile testnet
-  <br>
-Usage
-  <br>
-Create a Game:
-<br>
-move
-  <br>
-Copy code
-  <br>
-Game::new_game(<player1_address>, <player2_address>)
-  <br>
-Make a Move:
-<br>
-move
-  <br>
-Copy code
-  <br>
-Game::make_move(&mut <game_instance>, <row>, <col>, <player_address>)
-  <br>
-License
-  <br>
-This project is licensed under the MIT License.
-<br>
+🎮 Tic-Tac-Toe on Aptos:
+
+Players: Two players take turns.
+Symbols: One player is ❌, the other is ⭕.
+Grid: A 3x3 board with empty squares to fill.
+Objective: Be the first to align three of your symbols in a row, column, or diagonal.
+Strategy: Think ahead to block your opponent and create opportunities to win.
+🌐 Aptos Integration: With Aptos blockchain, players can experience seamless and secure online matches, ensuring fair play and recording victories with immutable proof. 🛡️
+
+🔁 Game Flow:
+
+Player 1 places their symbol (❌) on an empty square.
+Player 2 places their symbol (⭕) on an empty square.
+Continue alternating turns until one player wins or the board is full (draw).
+🏆 Winning: The first to align three symbols wins the match!
 
